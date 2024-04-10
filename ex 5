@@ -1,0 +1,39 @@
+/*Uma função que devolve os valores que são maiores que a média*/
+
+function valoresMaioresQueMedia(array) {
+    const media = array.reduce((accumulator, current) => accumulator + current, 0) / array.length
+    const valoresMaiores = array.filter(valor => valor > media)
+    return valoresMaiores
+}
+const numeros = [1, 2, 3, 4, 5]
+const valoresMaiores = valoresMaioresQueMedia(numeros)
+console.log(valoresMaiores)
+
+/*Uma função que devolva o menor valor da lista*/
+Menor([20, 99, 4, 8, 66, 34])
+function Menor(lista){
+    let menor = lista [0]
+
+    for(let i = 1; i < lista.length; i++){
+        if(lista[i] < menor){
+            menor = lista [i]
+        }
+    }
+    console.log(menor)
+}
+
+/*Uma função que devolva o valor da soma dos itens da lista*/
+const itens = [50, 40, 20, 10, 5]
+const sum = itens.reduce((accumulator, current) => accumulator + current, 0)
+console.log(sum)
+
+/*Uma função que devolva todos os valores que são menores que 20*/
+const valores = [15, 3, 7, 80, 55, 96]
+
+const menores = valores.filter(item => item < 20)
+console.log(menores)
+
+/*Uma função que vai devolver o primeiro e o último valor da lista*/
+const valorDaLista = [30, 14, 28, 0, 87]
+console.log(valorDaLista[0])
+console.log(valorDaLista[valorDaLista.length-1])
